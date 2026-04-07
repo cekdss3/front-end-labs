@@ -1,35 +1,49 @@
 :root {
-  /* paleta tipografica */
+  /*Paleta tipográfica*/
   --font-default: "Datatype", monospace;
   --font-principal-title: "Archivo Black", sans-serif;
   --font-secondary-title: "Roboto", sans-serif;
-  --font-secondary-title-weight: 900;
+  --font-secondary-title-wgt: 900;
+  --font-size-small: 0.8rem;
 
-  /* Paleta de cores */
+  /*Paleta de Cores*/
   --color-primary: #333;
   --color-bkg-figures: #f2eded;
   --color-border: #ccc;
+  --color-base-footer: #777;
+
+  /*Tamanhos de imagens*/
+  --logo-width: 94px;
+
+  /*Espaçamento*/
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 32px;
+
+  /*Border-radius*/
+  --border-width: 1px;
+  --border-radius: 4px;
 }
 
 body {
   color: var(--color-primary);
   font-family: var(--font-default);
+  width: 940px;
   margin-left: auto;
   margin-right: auto;
-  width: 940px;
 }
 
 h1 {
-  background-image: url(../img/body-background.png);
+  background-image: url(../img/sobre-background.jpg);
   padding: 10px;
   font-family: var(--font-principal-title);
 }
 
 h2 {
-  border-bottom: 2px groove #333333;
+  border-bottom: 2px groove #333;
   margin-top: 30px;
   font-family: var(--font-secondary-title);
-  font-weight: var(--font-secondary-title-weight);
+  font-weight: var(--font-secondary-title-wgt);
 }
 
 figure {
@@ -53,24 +67,35 @@ p {
 }
 
 #centro-distribuicao {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   width: 550px;
 }
 
-#rodape {
-  color: #777;
-  margin: 30px 0;
-  padding: 30px 0;
-}
-
-#rodape img {
-  margin-right: 30px;
-  vertical-align: middle;
-  width: 94px;
-}
-
 #familia-pelho {
-  float: right;
   margin: 0 0 10px 10px;
+  float: right;
+}
+
+/*Componente Rodapé*/
+.rodape {
+  margin: var(--space-3) 0;
+  padding: var(--space-3) 0;
+  color: var(--color-base-footer);
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  justify-content: center;
+}
+
+.footer__logo {
+  width: var(--logo-width);
+}
+
+.footer_text {
+  font-size: var(--font-size-small);
 }

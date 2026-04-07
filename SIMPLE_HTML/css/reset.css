@@ -1,35 +1,49 @@
-/* CSS Reset Mínimo - Remove completamente estilos padrão do navegador */
+/* css/reset.css */
 
-* {
-  box-sizing: border-box;
+/* 1. Remove margens e paddings padrão de todos os elementos */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Garante que padding/border não aumentem a largura total */
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  min-height: 100vh;
-  font-family: sans-serif;
-  line-height: 1.5;
-}
-
-img,
-video {
-  max-width: 100%;
+/* 2. Ajusta elementos de bloco e listas */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
   display: block;
 }
 
-button,
-input,
-textarea,
-select {
-  font: inherit;
+/* 3. Melhora a renderização de fontes e imagens */
+body {
+  line-height: 1.5; /* Melhora a legibilidade do texto */
+  -webkit-font-smoothing: antialiased;
 }
 
+img {
+  max-width: 100%; /* Evita que imagens transbordem do container */
+  display: block; /* Remove espaços indesejados abaixo da imagem */
+}
+
+/* 4. Reseta links para herdarem a cor do texto, a menos que especificado */
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/* 5. Remove bordas de frames e tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
