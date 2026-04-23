@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Boldonse";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.container {
+  background-color: #e3f0f0;
+  max-width: 1200px;
+  min-height: 700px;
+  padding: 2rem 2.5rem;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.container h1 {
+  font-size: 1.5rem;
+}
+
+.container p {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.form-group {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.form-group label {
+  width: 120px;
+  color: #333;
+  font-size: 0.8rem;
+  margin-right: 4rem;
+}
+
+.form-group input,
+.form-group select {
+  flex: 1;
+  min-height: 50px;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  flex: 1;
+  min-height: 80px;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#clear-btn,
+#submit-btn {
+  width: 80px;
+  min-height: 40px;
+  border: none;
+  opacity: 0.7;
+  transition: 0.4s;
+}
+
+#clear-btn:hover,
+#submit-btn:hover {
+  opacity: 1;
+}
+
+#clear-btn {
+  background-color: #ccc;
+  font-weight: 800;
+  font-size: 0.8rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+#submit-btn {
+  background-color: #35009e;
+  font-weight: 800;
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.footer-contact {
+  color: #333;
+  text-align: center;
+}
