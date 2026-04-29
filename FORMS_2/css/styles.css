@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 500px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.section {
+  background-color: #e6d5bf;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.section h3 {
+  margin-top: 0;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 6px;
+  margin: 5px 0 10px 0;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+  opacity: 0.6;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.cancelar {
+  background-color: #ff4d00;
+}
+
+.enviar {
+  background-color: #0000ff;
+}
